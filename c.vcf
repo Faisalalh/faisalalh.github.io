@@ -4,9 +4,11 @@ N:Alhammadi;Faisal;Mansour;;
 FN:Faisal Mansour Alhammadi
 ORG:Sharjah Economic Development Department (SEDD)
 TITLE:Commercial Officer
-TEL;TYPE=WORK,VOICE:+97165122886
+TEL;TYPE=CELL,WORK,VOICE,pref:+971564475436
 ADR;TYPE=WORK:;;P.O. Box 829;Sharjah;;;United Arab Emirates
 URL:https://www.sedd.ae
+item1.URL:https://wa.me/971564475436
+item1.X-ABLabel:WhatsApp
 NOTE:فيصل منصور الحمادي - ضابط تجاري - دائرة التنمية الاقتصادية بالشارقة
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUG
  BgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2w
