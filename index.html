@@ -69,7 +69,7 @@ h1{font-size:23px;font-weight:700;letter-spacing:-.02em}
     <div class="role"><span class="dot"></span>Commercial Officer · ضابط تجاري</div>
     <p class="org"><b>Sharjah Economic Development Department</b><br>دائرة التنمية الاقتصادية بالشارقة</p>
 
-    <a class="save" href="c.vcf" download="Faisal Alhammadi.vcf">
+    <a class="save" id="save" href="c.vcf">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
       Save Contact
     </a>
@@ -87,5 +87,16 @@ h1{font-size:23px;font-weight:700;letter-spacing:-.02em}
   </div>
   <div class="foot">Tap <b>Save Contact</b> to add me to your phone</div>
 </main>
+<script>
+(function(){
+  if(!/Android/i.test(navigator.userAgent))return; // iPhone: c.vcf opens the native contact card, no download
+  var e=encodeURIComponent;
+  document.getElementById('save').href='intent:#Intent;action=android.intent.action.INSERT;type=vnd.android.cursor.dir/raw_contact;'+
+    'S.name='+e('Faisal Mansour Alhammadi')+';S.phone='+e('+971564475436')+';i.phone_type=2;'+
+    'S.company='+e('Sharjah Economic Development Department (SEDD)')+';S.job_title='+e('Commercial Officer')+';'+
+    'S.notes='+e('فيصل منصور الحمادي - ضابط تجاري')+';'+
+    'S.browser_fallback_url='+e('https://faisalalh.github.io/c.vcf')+';end';
+})();
+</script>
 </body>
 </html>
